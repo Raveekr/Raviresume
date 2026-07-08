@@ -7,7 +7,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
 }
 
 body {
@@ -32,7 +32,7 @@ body {
     background-size: 20px 20px;
     background-color: white;
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 35% 65%;
 }
 
 .left {
@@ -376,14 +376,14 @@ body {
     }
 
     .right .projectbox ul li {
-        font-size: 11px;
+        font-size: 8px;
     }
 
     .projects .projectbox ul li a {
-        font-size: 10px;
+        font-size: 7px;
     }
     .right .experience ul li {
-        font-size: 10px;
+        font-size: 7px;
     }
 
 }
@@ -576,6 +576,9 @@ body {
 
 }
 @media screen and (max-width:400px){
+    .container{
+        width: 95vw;
+    }
     .right {
     /* border: 2px solid blue; */
     padding-left: 33px;
