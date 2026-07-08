@@ -254,7 +254,7 @@ body {
 }
 
 .projects .projectbox a {
-    display: block;
+    display:block;
     font-family: sans-serif, cursive;
     font-optical-sizing: auto;
     font-size: 16px;
@@ -262,12 +262,14 @@ body {
     text-decoration: none;
     color: black;
     padding: 10px 23px;
+    
+}
+.projects .projectbox a:hover{
+    transform: scale(1.02);
 }
 
-.projects .projectbox ul li a:hover {
 
-    color: rgb(26, 26, 147);
-}
+
 
 .experience {
     margin-top: 10px;
@@ -323,9 +325,7 @@ body {
 }
 
 
-.resume span a:hover {
-    background-color: rgb(219, 219, 255);
-}
+
 
 .resume span a:hover {
     /* color: white; */
@@ -376,16 +376,16 @@ body {
     }
 
     .right .projectbox ul li {
-        font-size: 9px;
+        font-size: 11px;
     }
 
+    .projects .projectbox ul li a {
+        font-size: 10px;
+    }
     .right .experience ul li {
         font-size: 10px;
     }
 
-    .projects .projectbox ul li a {
-        font-size: 12px;
-    }
 }
 
 @media screen and (max-width:770px) {
@@ -465,7 +465,7 @@ body {
     }
 
     .experience> :nth-child(1) {
-        font-size: 15px;
+        font-size: 19px;
 
     }
 
@@ -564,13 +564,33 @@ body {
 
     .projects .projectbox {
         padding: 0;
-        padding-left: 20px;
+        /* padding-left: 20px; */
     }
 
     .projects .projectbox ul {
         padding-left: 20px;
         /* or 15px */
         margin: 0;
+
     }
 
 }
+@media screen and (max-width:400px){
+    .right {
+    /* border: 2px solid blue; */
+    padding-left: 33px;
+
+}
+    .skills{
+        margin-top: 20px;
+  }
+  .projects{
+      margin-top: 30px;
+  }
+  .experience{
+    margin-top: 20px;
+  }
+  .experience ul li {
+    padding-left: 15px;
+  }
+} 
